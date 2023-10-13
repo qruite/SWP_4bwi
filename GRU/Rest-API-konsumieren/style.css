@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.container {
+    margin-left: 150px;
+}
+
+.load {
+    font-size: 25px;
+    width: 120px;
+    height: 35px;
+    border-radius: 10px;
+}
+
+h1{
+    font-size: 80px;
+}
+
+.content{
+    margin-top: 20px;
+}
