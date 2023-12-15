@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/reset.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="assets/js/script.js" defer></script>
+    <script src="assets/js/date.js" defer></script>
+    <script src="assets/js/rankings.js" defer></script>
+    <script src="assets/js/upcommingsGames.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="main" id="main">
+        <div class="container">
+            <div class="nav_bar">
+                <ul>
+                    <li class="nav_bar_item">
+                        <a href="#competition">competitions</a>
+                    </li>
+                    <li class="nav_bar_item">
+                        <a href="#popularTeams">popular teams</a>
+                    </li>
+                    <li class="nav_bar_item">
+                        <a href="#upcomingGames">upcoming games</a>
+                    </li>
+                    <li class="nav_bar_item">
+                        <a href="#rankings">rankings</a>
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="section_component">
+                <h1 class="section_component_headline" id="competition">competitions</h1>
+    
+                <div class="competition_section_content">
+                    <div class="competition_section_item" id="uefa_champions_league_item">
+                        <div class="competition_logo">
+                            <img src="assets/competition logo/cl.png" alt="">
+                        </div>
+                        <div class="competition_name">UEFA Champions League</div>
+                    </div>
+    
+                    <div class="competition_section_item" id="laliga_item">
+                        <div class="competition_logo">
+                            <img src="assets/competition logo/laliga.png" alt="">
+                        </div>
+                        <div class="competition_name">La Liga</div>
+                    </div>
+    
+                    <div class="competition_section_item" id="premier_league_item">
+                        <div class="competition_logo">
+                            <img src="assets/competition logo/premier-league.png" alt="">
+                        </div>
+                        <div class="competition_name">Premier League</div>
+                    </div>
+    
+                    <div class="competition_section_item" id="bundesliga_item">
+                        <div class="competition_logo">
+                            <img src="assets/competition logo/bundesliga.png" alt="">
+                        </div>
+                        <div class="competition_name">Bundesliga</div>
+                    </div>
+                </div>
+            </div>
+    
+
+            <!--popular teams-->
+            <div class="section_component">
+                <div class="section_component_headline" id="popularTeams">popular teams</div>
+    
+                <div class="popular_teams_section_content">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="white" width="104px" id="switch_btn_left">
+                        <path fill-rule="evenodd" d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z" clip-rule="evenodd" />
+                    </svg>
+                    
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="white" width="104px" id="switch_btn_right">
+                        <path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd" />
+                    </svg>
+
+                    <div class="popular_teams_item">
+                        <div class="team_logo"> <img src="assets/team logo/real madrid.png" alt=""></div>
+                        <div class="team_name">Real Madrid</div>
+                    </div>
+    
+                    <div class="popular_teams_item">
+                        <div class="team_logo"> <img src="assets/team logo/FC Barcelona.png" alt=""></div>
+                        <div class="team_name">FC Barcelona</div>
+                    </div>
+    
+                    <div class="popular_teams_item">
+                        <div class="team_logo"> <img src="assets/team logo/manchester city.png" alt=""></div>
+                        <div class="team_name">Manchester City</div>
+                    </div>
+    
+                    <div class="popular_teams_item">
+                        <div class="team_logo"> <img src="assets/team logo/fc bayern.png" alt=""></div>
+                        <div class="team_name">FC Bayern Munich</div>
+                    </div>
+                </div>
+            </div>
+
+            <!--upcoming games section-->
+            <div class="section_component">
+                <div class="section_component_headline" id="upcomingGames">upcoming games</div>
+                
+                <div class="upcoming_games_content">
+                    <!--beinhaltet 2 Container. Den Wettbewerb- und den Container mit allen Spielen-->
+                    <div class="upcoming_games_content_items">
+                        <!--Wettbewerbcontainer den man ausklappen kann, um kommende Spiel zu sehen-->
+                        <div class="up_games_content_header" id="up_games_header_cl">
+                            <div class="up_games_item_info">
+                                <img class="up_games_item_info_logo" src="assets/competition logo/cl.png" alt="Logo des Wettbewerbs">
+                                <div class="up_games_item_info_name">UEFA Champions League</div>
+                            </div>
+                            
+                            <div class="upgames_header_leftpart">
+                                <div class="up_games_item_date">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="black" width="35px">
+                                        <path fill-rule="evenodd" d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z" clip-rule="evenodd" />
+                                    </svg>
+                                      
+                                    <h1 id="headerClHeutigesDatum"></h1>
+                                    
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="black" width="35px">
+                                        <path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd" />
+                                    </svg>  
+                                </div>
+    
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="35px" class="w-6 h-6" id="headerArrowCl">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                </svg>                                  
+                            </div>       
+                        </div>
+                        
+                        <!--hier werden alle container der kommenden Spiele angezeigt-->
+                        <div class="up_games_content_games" id="up_games_content_cl">
+                            <!--Container mit den Informationen der kommenden Spielen -->
+                            <div class="game_box">
+                                <div class="game_box_left_part">
+                                    <h1>22 September 2023</h1>
+                                    <h2>19:00 CEST</h2>
+                                </div>
+                                <div class="game_box_right_part">
+                                    <div class="home_team">FC Barcelona</div>
+                                    <div class="away_team"> Real Madrid </div>
+                                </div>
+                            </div>
+                            <!---->
+                        </div>
+                    </div>
+
+                    <div class="upcoming_games_content_items">
+                        <!--Wettbewerbcontainer den man ausklappen kann, um kommende Spiel zu sehen-->
+                        <div class="up_games_content_header" id="up_games_header_laLiga">
+                            <div class="up_games_item_info">
+                                <img class="up_games_item_info_logo" src="assets/competition logo/laliga.png" alt="Logo des Wettbewerbs" width="47px" height="47px">
+                                <div class="up_games_item_info_name">La Liga</div>
+                            </div>
+                            
+                            <div class="upgames_header_leftpart">
+                                <div class="up_games_item_date">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="black" width="35px">
+                                        <path fill-rule="evenodd" d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z" clip-rule="evenodd" />
+                                    </svg>
+                                      
+                                    <h1 id="headerLlHeutigesDatum"></h1>
+                                    
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="black" width="35px">
+                                        <path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd" />
+                                    </svg>  
+                                </div>
+    
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="35px" class="w-6 h-6" id="headerArrowLl">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                </svg>                                  
+                            </div>       
+                        </div>
+
+                        <!--hier werden alle container der kommenden Spiele angezeigt-->
+                        <div class="up_games_content_games" id="up_games_content_ll">
+                            <!--Container mit den Informationen der kommenden Spielen -->
+                            <div class="game_box">
+                                <div class="game_box_left_part">
+                                    <h1>22 September 2023</h1>
+                                    <h2>19:00 CEST</h2>
+                                </div>
+                                <div class="game_box_right_part">
+                                    <div class="home_team">FC Barcelona</div>
+                                    <div class="away_team"> Real Madrid </div>
+                                </div>
+                            </div>
+                            <!---->
+                        </div>
+                    </div>
+
+                    <div class="upcoming_games_content_items">
+                        <!--Wettbewerbcontainer den man ausklappen kann, um kommende Spiel zu sehen-->
+                        <div class="up_games_content_header" id="up_games_header_premierLeague">
+                            <div class="up_games_item_info">
+                                <img class="up_games_item_info_logo" src="assets/competition logo/premier-league.png" alt="Logo des Wettbewerbs" width="40px" height="47.83px">
+                                <div class="up_games_item_info_name">Premier League</div>
+                            </div>
+                            
+                            <div class="upgames_header_leftpart">
+                                <div class="up_games_item_date">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="black" width="35px">
+                                        <path fill-rule="evenodd" d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z" clip-rule="evenodd" />
+                                    </svg>
+                                      
+                                    <h1 id="headerPlHeutigesDatum"></h1>
+                                    
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="black" width="35px">
+                                        <path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd" />
+                                    </svg>  
+                                </div>
+    
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="35px" class="w-6 h-6" id="headerArrowPl">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                </svg>                                  
+                            </div>       
+                        </div>
+
+                        <!--hier werden alle container der kommenden Spiele angezeigt-->
+                        <div class="up_games_content_games" id="up_games_content_pl">
+                            <!--Container mit den Informationen der kommenden Spielen -->
+                            <div class="game_box">
+                                <div class="game_box_left_part">
+                                    <h1>22 September 2023</h1>
+                                    <h2>19:00 CEST</h2>
+                                </div>
+                                <div class="game_box_right_part">
+                                    <div class="home_team">FC Barcelona</div>
+                                    <div class="away_team"> Real Madrid </div>
+                                </div>
+                            </div>
+                            <!---->
+                        </div>
+                    </div>
+
+                    <div class="upcoming_games_content_items">
+                        <!--Wettbewerbcontainer den man ausklappen kann, um kommende Spiel zu sehen-->
+                        <div class="up_games_content_header" id="up_games_header_bundesliga">
+                            <div class="up_games_item_info">
+                                <img class="up_games_item_info_logo" src="assets/competition logo/bundesliga.png" alt="Logo des Wettbewerbs" width="47px" height="47px">
+                                <div class="up_games_item_info_name">Bundesliga</div>
+                            </div>
+                            
+                            <div class="upgames_header_leftpart">
+                                <div class="up_games_item_date">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="black" width="35px">
+                                        <path fill-rule="evenodd" d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z" clip-rule="evenodd" />
+                                    </svg>
+                                      
+                                    <h1 id="headerBlHeutigesDatum"></h1>
+                                    
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="black" width="35px">
+                                        <path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd" />
+                                    </svg>  
+                                </div>
+    
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="35px" class="w-6 h-6" id="headerArrowBl">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                </svg>                                  
+                            </div>       
+                        </div>
+
+                        <!--hier werden alle container der kommenden Spiele angezeigt-->
+                        <div class="up_games_content_games" id="up_games_content_bl">
+                            <!--Container mit den Informationen der kommenden Spielen -->
+                            <!--<div class="game_box">
+                                <div class="game_box_left_part">
+                                    <h1>22 September 2023</h1>
+                                    <h2>19:00 CEST</h2>
+                                </div>
+                                <div class="game_box_right_part">
+                                    <div class="home_team">FC Barcelona</div>
+                                    <div class="away_team"> Real Madrid </div>
+                                </div>
+                            </div>-->
+                            <!---->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="section_component">
+                <div class="section_component_headline" id="rankings">Rankings</div>
+
+                <div class="section_component_table" id="section_component_table">
+                    <!--oberste Zeile der Tabelle bleibt unverändert-->
+                    <div class="ranking_section_grid" id="tableHeader">
+                        <div class="ranking_section_grid_left">
+                            <div class="placement">#</div>
+                            <div class="player">Spieler</div>
+                        </div>
+                        <div class="adf"></div>
+                        <div class="ranking_section_grid_middl">
+                            <div class="playerAge">Alter</div>
+                            <div class="playerNationality">Nat</div>
+                            <div class="playerTeam">Verein / Liga</div>
+                        </div>
+    
+                        <div class="ranking_section_grid_right">
+                            <div class="gamesPlayed">Spiele</div>
+                            <div class="goalsScored">Tore</div>
+                            <div class="totalAssist">Assits</div>
+                            <div class="totalPoints">Punkte</div>
+                        </div>
+                    </div>
+
+                    <!--hier werden die nächsten Zeilen der mit JS eingefügt-->
+                    <!--<div class="ranking_section_grid">
+                        <div class="ranking_section_grid_left">
+                            <div class="placement">1</div>
+                            <div class="player">Harry Kayne</div>
+                        </div>
+    
+                        <div class="ranking_section_grid_middl">
+                            <div class="playerAge">33</div>
+                            <div class="playerNationality">Aut</div>
+                            <div class="playerTeam">
+                                <div class="team">Bayern München</div>
+                                <div class="teamLiga">Bundesliga</div>
+                            </div>
+                        </div>
+    
+                        <div class="ranking_section_grid_right">
+                            <div class="gamesPlayed">10</div>
+                            <div class="goalsScored">10</div>
+                            <div class="totalAssist">10</div>
+                            <div class="totalPoints">10</div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
