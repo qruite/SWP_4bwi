@@ -1,7 +1,7 @@
 import './App.css'
 import List from './components/List'
 import Button from './components/Button';
-/*import Card from './components/Card';*/
+import Card from './components/Card';
 import Header from './components/Header'
 
 
@@ -23,10 +23,9 @@ function App() {
 
       <Header name="Card" />
       <div className='component'>
-
+        <Card image="https://www.w3schools.com/howto/img_avatar.png" name="John Doe" desc="Architect & Engineer" />
       </div>
     </div>
-
   );
 }
 

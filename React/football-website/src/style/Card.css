@@ -1,0 +1,18 @@
+.card {
+    box-shadow: 15px 16px 22px rgba(0, 0, 0, 0.479);
+    width: 330px;
+}
+
+.cardInfo {
+    padding: 23px 20px;
+}
+
+.cardName {
+    margin-bottom: 10px;
+    font-size: 23px;
+    font-weight: 900;
+}
+
+.cardDesc {
+    font-size: 20px;
+}

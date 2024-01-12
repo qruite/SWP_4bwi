@@ -1,4 +1,4 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
 }
@@ -8,14 +8,14 @@
     font-size: 15px;
     width: 170px;
     height: 50px;
-    background-color:darkcyan;
+    background-color: darkcyan;
     display: flex;
     align-items: center;
     padding-left: 20px;
     margin-bottom: 2px;
 }
 
-.listComponent:hover{
+.listComponent:hover {
     cursor: pointer;
-    background-color:rgb(1, 92, 92);
+    background-color: rgb(1, 92, 92);
 }
